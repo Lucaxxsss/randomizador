@@ -21,8 +21,10 @@
 
                               var resp = document.getElementById('res')
 
-                              if (valeatorio < 0.33) {
+                              if (valeatorio < 0.16) {
                                         resp.innerHTML = `<strong>NÃO</strong>`
+                              } else if (valeatorio < 0.33) {
+                                        resp.innerHTML = `<strong>TALVEZ MUITO TALVEZ...</strong>`
                               } else if (valeatorio < 0.46) {
                                         resp.innerHTML = `<strong>TALVEZ MUITO TALVEZ...</strong>`
                               } else if (valeatorio < 0.68) {
