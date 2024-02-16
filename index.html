@@ -23,10 +23,15 @@
 
                               if (valeatorio < 0.33) {
                                         resp.innerHTML = `<strong>NÃO</strong>`
-                              } else if (valeatorio < 0.66) {
+                              } else if (valeatorio < 0.46) {
+                                        resp.innerHTML = `<strong>TALVEZ MUITO TALVEZ...</strong>`
+                              } else if (valeatorio < 0.68) {
                                         resp.innerHTML = `<strong>TALVEZ</strong>`
-                              } else {
+                              }
+                              else if (valeatorio < 0.85) {
                                         resp.innerHTML = `<strong>SIM</strong>`
+                              } else if (valeatorio <= 1) {
+                                        resp.innerHTML = `<strong>SIM OBVIO P KRL LÓGICO</strong>`
                               }
                     }
           </script>
