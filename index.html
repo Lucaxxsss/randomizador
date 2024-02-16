@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Sim, nao, talvez</title>
+          <link rel="stylesheet" href="style.css">
+</head>
+<body>
+          <main>
+                    <h1>HMMMMM </h1>
+                    <input type="text" name="perg" id="perg">
+                    <img height="50px" src="view.png" alt="" onclick="verify()">
+
+                    <div id="res"> <span id="s1">.</span><span id="s2">.</span><span id="s3">.</span></div>
+          </main>
+
+          <script>
+                    function verify() {
+                              var valeatorio = Math.random()
+
+                              var resp = document.getElementById('res')
+
+                              if (valeatorio < 0.33) {
+                                        resp.innerHTML = `<strong>NÃO</strong>`
+                              } else if (valeatorio < 0.66) {
+                                        resp.innerHTML = `<strong>TALVEZ</strong>`
+                              } else {
+                                        resp.innerHTML = `<strong>SIM</strong>`
+                              }
+                    }
+          </script>
+
+</body>
+</html>
